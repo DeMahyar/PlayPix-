@@ -1,0 +1,54 @@
+{
+  "name": "playpix",
+  "productName": "PlayPix",
+  "version": "1.2.0",
+  "description": "PlayPix — a beautiful local-first music player for Windows",
+  "author": "PlayPix",
+  "license": "MIT",
+  "main": "./out/main/index.js",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "typecheck:node": "tsc --noEmit -p tsconfig.node.json",
+    "typecheck:web": "tsc --noEmit -p tsconfig.web.json",
+    "typecheck": "npm run typecheck:node && npm run typecheck:web",
+    "build": "electron-vite build",
+    "rebuild": "electron-rebuild -f -w better-sqlite3",
+    "icon": "node scripts/make-ico.mjs",
+    "seed": "node scripts/seed-music.mjs",
+    "e2e": "node scripts/e2e.mjs",
+    "dist:win": "npm run build && electron-builder --win --config electron-builder.yml"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.10.0",
+    "border-beam": "^1.4.1",
+    "chokidar": "^3.6.0",
+    "jpeg-js": "^0.4.4"
+  },
+  "devDependencies": {
+    "@electron/rebuild": "^3.7.1",
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/node": "^20.14.15",
+    "@types/react": "^18.3.4",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8",
+    "electron-vite": "^2.3.0",
+    "music-metadata": "^10.5.0",
+    "node-taglib-sharp": "^6.0.3",
+    "png-to-ico": "^2.1.8",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "resedit": "^3.1.0",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.8"
+  },
+  "allowScripts": {
+    "electron@33.4.11": true,
+    "esbuild@0.21.5": true,
+    "better-sqlite3@11.10.0": true,
+    "@electron/rebuild@3.7.2": true,
+    "@electron/rebuild@3.6.1": true,
+    "node-taglib-sharp@6.0.3": true
+  }
+}

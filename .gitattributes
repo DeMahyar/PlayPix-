@@ -1,0 +1,35 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Scripts
+*.sh text eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Source Code
+*.ts text
+*.tsx text
+*.js text
+*.jsx text
+*.cjs text
+*.mjs text
+*.json text
+*.css text
+*.html text
+*.md text
+
+# Binary Assets
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.pdf binary
+*.mp3 binary
+*.flac binary
+*.m4a binary
+*.ogg binary
+*.wav binary
+*.wma binary
+*.zip binary
+*.exe binary

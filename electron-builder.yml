@@ -1,0 +1,36 @@
+appId: com.playpix.music
+productName: PlayPix
+copyright: Copyright © 2026 PlayPix
+directories:
+  output: release
+  buildResources: build
+files:
+  - out/**
+  - package.json
+  - "!**/node_modules/better-sqlite3/build/Release/obj/**"
+  - "!**/node_modules/better-sqlite3/build/Release/test_extension.node"
+# Native deps are prepared manually (correct win32-x64 + electron-ABI prebuild
+# is swapped in before packaging) — electron-builder must not rebuild them.
+npmRebuild: false
+asarUnpack:
+  - "**/node_modules/better-sqlite3/**"
+win:
+  icon: build/icon.ico
+  signAndEditExecutable: false
+  artifactName: ${productName}-${version}-${arch}.${ext}
+  # NOTE: only 'dir' here — the NSIS installer is built by scripts/build-installer.sh
+  # (electron-builder's own nsis target fails with '!define VERSION already defined')
+  # and the portable zip is rebuilt manually from win-unpacked.
+  target:
+    - target: dir
+      arch:
+        - x64
+afterPack: ./scripts/after-pack.cjs
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: always
+  shortcutName: PlayPix
+  uninstallDisplayName: PlayPix
+  artifactName: ${productName}-Setup-${version}.${ext}
