@@ -23,6 +23,14 @@ A modern, high-performance desktop music player for Windows crafted with glassmo
 
 ---
 
+## 🎬 PlayPix — Product Showcase
+
+Watch the PlayPix product showcase and explore the experience.
+
+[▶ Watch the PlayPix Showreel]([PASTE_YOUR_VIDEO_LINK_HERE](https://github.com/maxermiro-glitch/PlayPix-/releases/download/MotionGraphick/PlayPix-Motion-Film-15s.mp4))
+
+
+
 ## Overview
 
 Modern streaming platforms have turned music into an algorithmic feed weighed down by subscription paywalls, telemetry, intrusive social hooks, and compressed streams. **PlayPix** restores dignity, ownership, and aesthetic joy to your personal audio archive.
