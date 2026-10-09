@@ -27,7 +27,7 @@ A modern, high-performance desktop music player for Windows crafted with glassmo
 
 Watch the PlayPix product showcase and explore the experience.
 
-[▶ Watch the PlayPix Showreel]([PASTE_YOUR_VIDEO_LINK_HERE](https://github.com/maxermiro-glitch/PlayPix-/releases/download/MotionGraphick/PlayPix-Motion-Film-15s.mp4))
+[▶ Watch the PlayPix Showreel](https://github.com/maxermiro-glitch/PlayPix-/releases/download/MotionGraphick/PlayPix-Motion-Film-15s.mp4)
 
 
 
